@@ -1,0 +1,23 @@
+{
+  "name": "rocketdesignsystem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "find -maxdepth 1 ! -name .git ! -name downloads ! -name README.md ! -name package.json ! -name . -exec rm -rv {} \\;",
+    "copy:main": "rsync -av ../rocket-website/dist/ ./ --exclude .git",
+    "copy:downloads": "mkdir -p downloads && cp ../rocket-styles/dist/* ./downloads && cp ../rocket-react/dist/*.tgz ./downloads",
+    "copy:storybook": "mkdir storybook && cp -av ../rocket-react/dist/storybook/* ./storybook",
+    "build": "npm run clean && npm run copy:main && npm run copy:downloads && npm run copy:storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://rocketdesignsystem@github.com/rocketdesignsystem/rocketdesignsystem.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rocketdesignsystem/rocketdesignsystem/issues"
+  },
+  "homepage": "https://github.com/rocketdesignsystem/rocketdesignsystem#readme"
+}
