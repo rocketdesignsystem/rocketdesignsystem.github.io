@@ -118,6 +118,13 @@
   margin-bottom: 100px;
   padding-right: 80px; }
 
+@media only screen and (max-width: 768px) {
+  .__main__components {
+    margin-left: 0;
+    margin-top: 0; }
+  .__main__content {
+    margin-top: 138px; } }
+
 .__footer {
   background-color: #2a3b4b; }
   .__footer--system {
@@ -790,6 +797,10 @@
   .__website h1 {
     font-size: 60px;
     color: #2a3b4b; }
+    @media only screen and (max-width: 768px) {
+      .__website h1 {
+        font-size: 32px;
+        color: #20211f; } }
   .__website h2 {
     font-size: 20px; }
   .__website h3 {
