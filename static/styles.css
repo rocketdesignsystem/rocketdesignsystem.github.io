@@ -498,7 +498,7 @@
     font-size: 20px;
     font-weight: normal;
     color: #20211f; }
-    .__side-bar .rocket__side-nav__link:after, .__side-bar .rocket__sub-nav__trigger:after {
+    .__side-bar .rocket__side-nav__link:hover:after, .__side-bar .rocket__side-nav__link:focus:after, .__side-bar .rocket__sub-nav__trigger:hover:after, .__side-bar .rocket__sub-nav__trigger:focus:after {
       left: 0;
       right: 0; }
   .__side-bar .rocket__side-nav__link--selected:before {
