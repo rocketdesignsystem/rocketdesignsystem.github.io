@@ -1131,6 +1131,8 @@ pre[class*="language-"] {
       margin-top: 27px;
       padding-left: 16px;
       color: #20211f; }
+      .__mobile-nav__sub__back:hover:after, .__mobile-nav__sub__back:focus:after {
+        border-color: #20211f; }
     .__mobile-nav__sub .__side-bar {
       display: block;
       position: static;
