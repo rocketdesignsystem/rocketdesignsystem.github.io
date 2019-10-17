@@ -1129,7 +1129,8 @@ pre[class*="language-"] {
     .__mobile-nav__sub__back {
       margin-left: 20px;
       margin-top: 27px;
-      padding-left: 16px; }
+      padding-left: 16px;
+      color: #20211f; }
     .__mobile-nav__sub .__side-bar {
       display: block;
       position: static;
