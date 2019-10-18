@@ -217,11 +217,24 @@
     .__footer .__footer-main__links .rocket__a,
     .__footer .__footer-main__links .rocket__a:visited {
       color: white;
-      margin-right: 30px; }
-      .__footer .__footer-main__links .rocket__a:hover:before, .__footer .__footer-main__links .rocket__a:focus:before,
-      .__footer .__footer-main__links .rocket__a:visited:hover:before,
-      .__footer .__footer-main__links .rocket__a:visited:focus:before {
-        box-shadow: 0 0 0 2px white; }
+      margin-right: 30px;
+      text-decoration: none;
+      font-size: 16px; }
+      .__footer .__footer-main__links .rocket__a:hover, .__footer .__footer-main__links .rocket__a:focus,
+      .__footer .__footer-main__links .rocket__a:visited:hover,
+      .__footer .__footer-main__links .rocket__a:visited:focus {
+        text-decoration: underline; }
+        .__footer .__footer-main__links .rocket__a:hover:after, .__footer .__footer-main__links .rocket__a:focus:after,
+        .__footer .__footer-main__links .rocket__a:visited:hover:after,
+        .__footer .__footer-main__links .rocket__a:visited:focus:after {
+          position: absolute;
+          content: "";
+          top: -1px;
+          left: -7px;
+          right: -7px;
+          bottom: -5px;
+          border-radius: 4px;
+          border: 2px solid white; }
   .__footer .__footer-main__powered-by {
     font-size: 16px;
     color: white;
@@ -230,16 +243,7 @@
     vertical-align: top; }
   .__footer .__footer-main__org {
     display: inline-block;
-    width: 150px;
-    height: 30px;
-    background-repeat: no-repeat;
-    margin-right: 21px;
-    background-size: 100%; }
-    .__footer .__footer-main__org--colesgroup {
-      background-image: url("/static/images/colesgroup@2x.png"); }
-    .__footer .__footer-main__org--studio800 {
-      background-position: 0 2px;
-      background-image: url("/static/images/studio800@2x.png"); }
+    margin-right: 21px; }
 
 @media only screen and (max-width: 768px) {
   .__footer--system {
@@ -295,12 +299,8 @@
     height: 20px;
     display: inline-block;
     background-repeat: no-repeat;
-    margin-right: 21px; }
-    .__index .__section-1__org--colesgroup {
-      background-image: url("/static/images/colesgroup.png"); }
-    .__index .__section-1__org--studio800 {
-      background-position: 0 2px;
-      background-image: url("/static/images/studio800.png"); }
+    margin-right: 21px;
+    vertical-align: top; }
 
 .__index .__section-2 {
   background-color: #2a3b4b;
@@ -873,16 +873,6 @@
   .__website h5 + pre,
   .__website h5 + blockquote {
     margin-top: -0.25em; }
-  .__website a {
-    color: #20211f; }
-    .__website a:hover, .__website a:focus {
-      color: #20211f; }
-      .__website a:hover:before, .__website a:focus:before {
-        box-shadow: 0 0 0 2px #20211f; }
-      .__website a:hover:active, .__website a:focus:active {
-        color: #20211f; }
-        .__website a:hover:active:before, .__website a:focus:active:before {
-          box-shadow: none; }
   .__website p,
   .__website ul > li,
   .__website ol > li {
@@ -900,15 +890,12 @@
       border-radius: 100px; }
     .__website .__index .rocket__button--primary {
       background-color: #e01A22;
-      color: white;
-      border-color: #e01A22; }
+      border-color: #e01A22;
+      color: white; }
       .__website .__index .rocket__button--primary:focus, .__website .__index .rocket__button--primary:hover {
         color: white; }
-        .__website .__index .rocket__button--primary:focus:active, .__website .__index .rocket__button--primary:hover:active {
-          background-color: #c70007;
-          border-color: #c70007; }
-      .__website .__index .rocket__button--primary:after {
-        box-shadow: none; }
+        .__website .__index .rocket__button--primary:focus:after, .__website .__index .rocket__button--primary:hover:after {
+          border-color: #e01A22; }
     .__website .__index .rocket__button--secondary {
       border-color: transparent; }
       .__website .__index .rocket__button--secondary:hover:after, .__website .__index .rocket__button--secondary:focus:after {
@@ -1108,11 +1095,6 @@ pre[class*="language-"] {
     .__mobile-nav__main__org {
       display: inline-block;
       margin-right: 24px; }
-      .__mobile-nav__main__org--studio800 {
-        background-image: url("/static/images/studio800-dark.png");
-        background-repeat: no-repeat;
-        width: 127px;
-        height: 20px; }
   .__mobile-nav__sub {
     position: absolute;
     top: 0;
@@ -1132,7 +1114,8 @@ pre[class*="language-"] {
       padding-left: 16px;
       color: #20211f; }
       .__mobile-nav__sub__back:hover:after, .__mobile-nav__sub__back:focus:after {
-        border-color: #20211f; }
+        border-color: #20211f;
+        border-radius: 100px; }
     .__mobile-nav__sub .__side-bar {
       display: block;
       position: static;
