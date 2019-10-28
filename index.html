@@ -273,14 +273,16 @@
         handleSwipeEnd( event ) {
 
             let touchEndX = event.changedTouches[0].clientX;
+            let tolerance = 80;
 
-            if ( touchEndX > this.touchStartX ) {
+            if ( touchEndX - this.touchStartX > tolerance ) {
+                
+                this.moveContainerToLeft();
+
+            }
+            else if ( this.touchStartX - touchEndX > tolerance ) {
 
                 this.moveContainerToRight();
-            }
-            else if ( touchEndX < this.touchStartX ) {
-
-                this.moveContainerToLeft();
             }
         }
 
