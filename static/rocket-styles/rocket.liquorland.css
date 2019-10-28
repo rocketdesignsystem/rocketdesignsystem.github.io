@@ -19,7 +19,7 @@
 .rocket__d1 {
   margin-top: 0;
   margin-bottom: 0.375em;
-  font-family: "Volkswagen", "century gothic", arial, sans-serif;
+  font-family: Gotham, "century gothic", arial, sans-serif;
   font-size: 72px;
   line-height: 80px; }
   .rocket .rocket__d1--black100,
@@ -81,7 +81,7 @@
 .rocket__d2 {
   margin-top: 0;
   margin-bottom: 0.375em;
-  font-family: "Volkswagen", "century gothic", arial, sans-serif;
+  font-family: Gotham, "century gothic", arial, sans-serif;
   font-size: 56px;
   line-height: 64px; }
   .rocket .rocket__d2--black100,
@@ -144,7 +144,7 @@
 .rocket__h1 {
   margin-top: 0;
   margin-bottom: 0.375em;
-  font-family: "Volkswagen", "century gothic", arial, sans-serif;
+  font-family: Gotham, "century gothic", arial, sans-serif;
   font-size: 40px;
   line-height: 45px; }
   .rocket .rocket h1--black100, .rocket .rocket__h1--black100,
@@ -225,7 +225,7 @@
 .rocket__h2 {
   margin-top: 0;
   margin-bottom: 0.375em;
-  font-family: "Volkswagen", "century gothic", arial, sans-serif;
+  font-family: Gotham, "century gothic", arial, sans-serif;
   font-size: 32px;
   line-height: 40px; }
   .rocket .rocket h2--black100, .rocket .rocket__h2--black100,
@@ -306,7 +306,7 @@
 .rocket__h3 {
   margin-top: 0;
   margin-bottom: 0.375em;
-  font-family: "Volkswagen", "century gothic", arial, sans-serif;
+  font-family: Gotham, "century gothic", arial, sans-serif;
   font-size: 24px;
   line-height: 30px; }
   .rocket .rocket h3--black100, .rocket .rocket__h3--black100,
@@ -387,7 +387,7 @@
 .rocket__h4 {
   margin-top: 0;
   margin-bottom: 0.375em;
-  font-family: "Volkswagen", "century gothic", arial, sans-serif;
+  font-family: Gotham, "century gothic", arial, sans-serif;
   font-size: 20px;
   line-height: 27px; }
   .rocket .rocket h4--black100, .rocket .rocket__h4--black100,
@@ -468,7 +468,7 @@
 .rocket__h5 {
   margin-top: 0;
   margin-bottom: 0.375em;
-  font-family: "Volkswagen", "century gothic", arial, sans-serif;
+  font-family: Gotham, "century gothic", arial, sans-serif;
   font-size: 16px;
   line-height: 22px; }
   .rocket .rocket h5--black100, .rocket .rocket__h5--black100,
@@ -634,7 +634,7 @@
   .rocket__d2 {
     margin-top: 0;
     margin-bottom: 0.375em;
-    font-family: "Volkswagen", "century gothic", arial, sans-serif;
+    font-family: Gotham, "century gothic", arial, sans-serif;
     font-size: 40px;
     line-height: 45px; }
     .rocket .rocket__d1--black100, .rocket .rocket__d2--black100,
@@ -1428,7 +1428,7 @@
         background-repeat: no-repeat; }
   .rocket .rocket__dialog__title,
   .rocket__dialog__title {
-    font-family: "Volkswagen", "century gothic", arial, sans-serif;
+    font-family: Gotham, "century gothic", arial, sans-serif;
     font-size: 20px;
     line-height: 27px;
     color: #20211f;
@@ -1872,7 +1872,7 @@
     margin-bottom: 6px; }
   .rocket .rocket__thumbnail__title,
   .rocket__thumbnail__title {
-    font-family: "Volkswagen", "century gothic", arial, sans-serif;
+    font-family: Gotham, "century gothic", arial, sans-serif;
     font-size: 40px;
     line-height: 45px;
     color: white;
@@ -1971,7 +1971,7 @@
           box-shadow: 0 0 0 2px transparent; }
   .rocket .rocket__tile__price,
   .rocket__tile__price {
-    font-family: "Volkswagen", "century gothic", arial, sans-serif;
+    font-family: Gotham, "century gothic", arial, sans-serif;
     font-size: 24px;
     line-height: 32px;
     color: #20211f;
@@ -2087,7 +2087,7 @@
   .rocket .rocket__radio-dialog__title,
   .rocket__radio-dialog__title {
     display: block;
-    font-family: "Volkswagen", "century gothic", arial, sans-serif;
+    font-family: Gotham, "century gothic", arial, sans-serif;
     font-size: 20px;
     line-height: 27px;
     color: #20211f;
