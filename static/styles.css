@@ -929,9 +929,7 @@ pre[class*="language-"] {
   background-color: white;
   border-bottom: 1px solid #e5e8eb;
   padding-right: 20px;
-  padding-left: 26px;
-  display: flex;
-  align-items: center; }
+  padding-left: 26px; }
   .__in-page-nav__component {
     display: none;
     text-transform: capitalize;
@@ -940,15 +938,18 @@ pre[class*="language-"] {
     color: #2a3b4b; }
   .__in-page-nav--slidedown, .__in-page-nav--slideup {
     position: fixed;
-    justify-content: space-between;
     padding-left: 20px;
     left: 0;
     z-index: 101;
     animation-duration: 0.2s;
     animation-fill-mode: forwards;
     animation-delay: 0.2s; }
+    .__in-page-nav--slidedown .__in-page-nav__items, .__in-page-nav--slideup .__in-page-nav__items {
+      margin-left: 264px; }
     .__in-page-nav--slidedown .__in-page-nav__component, .__in-page-nav--slideup .__in-page-nav__component {
-      display: block; }
+      display: block;
+      position: absolute;
+      top: 22px; }
   .__in-page-nav--slidedown {
     top: -66px;
     animation-name: slidedown-in-page-nav; }
