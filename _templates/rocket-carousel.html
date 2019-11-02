@@ -10,7 +10,9 @@
     position: absolute;
     display: flex;
     left: 0;
-    padding-bottom: 5px; /* To accommodate shadow of the cards */
+    /* To accommodate shadow of the cards */
+    padding-top: 5px;
+    padding-bottom: 5px; 
 }
 
 .rocket__carousel__content--transition {
@@ -25,7 +27,7 @@
     border: none;
     background-color: #20211f;
     position: absolute;
-    top: 40%;
+    top: 64%;
     z-index: 1;
     border-radius: 100px;
     cursor: pointer;
@@ -68,14 +70,19 @@
         height: 370px;
     }
 
+    .rocket__carousel__button {
+
+        top: 40%;
+    }
+
     .rocket__carousel__button--left {
 
-        left: 20px;
+        left: 0;
     }
 
     .rocket__carousel__button--right {
 
-        right: 20px;
+        right: 0;
     }
 }
 
