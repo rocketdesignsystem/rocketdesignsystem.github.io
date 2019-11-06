@@ -142,6 +142,15 @@
   margin-top: 215px;
   margin-bottom: 100px;
   padding-right: 20px; }
+  .__main__content hr {
+    position: absolute;
+    left: -50px;
+    height: 5px;
+    right: 0;
+    border: none;
+    border-bottom: 1px solid #e5e8eb;
+    top: 232px;
+    z-index: 10; }
 
 @media only screen and (max-width: 768px) {
   .__main__components {
@@ -156,11 +165,12 @@
     margin-left: 258px; }
     .__footer--system .__footer__container {
       padding-left: 50px;
-      padding-right: 50px; }
+      padding-right: 50px;
+      max-width: none; }
     .__footer--system .__footer__container--main {
       margin-left: 0; }
   .__footer__container {
-    max-width: 1440px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 100px 80px; }
   .__footer__get-in-touch {
@@ -927,7 +937,6 @@ pre[class*="language-"] {
   right: 0;
   z-index: 1;
   background-color: white;
-  border-bottom: 1px solid #e5e8eb;
   padding-right: 20px;
   padding-left: 26px; }
   .__in-page-nav__component {
@@ -941,6 +950,7 @@ pre[class*="language-"] {
     padding-left: 20px;
     left: 0;
     z-index: 101;
+    border-bottom: 1px solid #e5e8eb;
     animation-duration: 0.2s;
     animation-fill-mode: forwards;
     animation-delay: 0.2s; }
@@ -1095,6 +1105,15 @@ pre[class*="language-"] {
     display: block; }
     .__mobile-nav--hidden {
       display: none; } }
+
+.__tag-bar {
+  margin-bottom: 10px; }
+  .__tag-bar .rocket__pill {
+    margin-right: 5px;
+    background-color: #20211f;
+    color: white;
+    font-size: 12px;
+    font-weight: normal; }
 
 html, body {
   margin: 0;
