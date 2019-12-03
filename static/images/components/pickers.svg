@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="142" viewBox="0 0 200 142">
+    <g fill="none" fill-rule="evenodd">
+        <rect width="200" height="142" rx="2"/>
+        <g transform="translate(-5 51)">
+            <g transform="translate(0 2)">
+                <rect width="127" height="36" x="40" fill="#FFF" opacity=".2" rx="2"/>
+                <text fill="#FFF" fill-opacity=".87" font-family="Roboto-Regular, Roboto" font-size="12">
+                    <tspan x="191.244" y="23">23</tspan>
+                </text>
+                <circle cx="166" cy="18" r="18" fill="#FFF"/>
+                <text fill="#A53BC2" font-family="Roboto-Regular, Roboto" font-size="12">
+                    <tspan x="160.244" y="23">22</tspan>
+                </text>
+                <text fill="#FFF" fill-opacity=".87" font-family="Roboto-Regular, Roboto" font-size="12">
+                    <tspan x="129.244" y="23">21</tspan>
+                </text>
+                <text fill="#FFF" fill-opacity=".87" font-family="Roboto-Regular, Roboto" font-size="12">
+                    <tspan x="98.241" y="23">20</tspan>
+                </text>
+                <text fill="#FFF" fill-opacity=".87" font-family="Roboto-Regular, Roboto" font-size="12">
+                    <tspan x="67.244" y="23">19</tspan>
+                </text>
+                <text fill="#000" fill-opacity=".87" font-family="Roboto-Regular, Roboto" font-size="12">
+                    <tspan x="36.244" y="23">18</tspan>
+                </text>
+                <text fill="#FFF" fill-opacity=".87" font-family="Roboto-Regular, Roboto" font-size="12">
+                    <tspan x="5.244" y="23">17</tspan>
+                </text>
+            </g>
+            <circle cx="43" cy="20" r="18" fill="#FFF"/>
+            <text fill="#A53BC2" font-family="Roboto-Regular, Roboto" font-size="12">
+                <tspan x="36.244" y="25">18</tspan>
+            </text>
+            <path stroke="#9517B8" d="M63 40H23V0h40zM186 40h-40V0h40z"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="142" viewBox="0 0 200 142">
+    <defs>
+        <path id="a" d="M0 0h154v18H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <rect width="200" height="142" rx="2"/>
+        <path fill="#FFF" d="M26.5 44h-7a2 2 0 0 0-1.995 1.85L17.5 46v48a2 2 0 0 0 1.85 1.995l.15.005h163a2 2 0 0 0 1.995-1.85l.005-.15V46a2 2 0 0 0-2-2h-7v-2h7a4 4 0 0 1 4 4v48a4 4 0 0 1-4 4h-163a4 4 0 0 1-4-4V46a4 4 0 0 1 4-4h7v2z"/>
+        <text fill="#FFF" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16" opacity=".6" transform="translate(14.5 34)">
+            <tspan x="14" y="39">Hey there</tspan>
+        </text>
+        <g transform="translate(28.5 34)">
+            <mask id="b" fill="#fff">
+                <use xlink:href="#a"/>
+            </mask>
+            <path fill="#FFF" d="M34 8h119v2H34z" mask="url(#b)"/>
+            <text fill="#FFF" font-family="SourceSansPro-Semibold, Source Sans Pro" font-size="12" font-weight="500" mask="url(#b)">
+                <tspan x="1" y="13">Label</tspan>
+            </text>
+        </g>
+        <path fill="#A53BC2" fill-rule="nonzero" d="M15 48h171v16H15zM15 78h171v20H15z" opacity=".5"/>
+        <path stroke="#FFF" stroke-dasharray="3" stroke-linecap="square" d="M15.156 111.5H186.5M30.5 28.5h35"/>
+    </g>
+</svg>

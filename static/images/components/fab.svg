@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="142" viewBox="0 0 200 142">
+    <defs>
+        <rect id="a" width="56" height="56" rx="28"/>
+        <filter id="b" width="155.4%" height="155.4%" x="-27.7%" y="-25.9%" filterUnits="objectBoundingBox">
+            <feMorphology in="SourceAlpha" radius=".5" result="shadowSpreadOuter1"/>
+            <feOffset dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+            <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter2"/>
+            <feGaussianBlur in="shadowOffsetOuter2" result="shadowBlurOuter2" stdDeviation="5"/>
+            <feColorMatrix in="shadowBlurOuter2" result="shadowMatrixOuter2" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0"/>
+            <feOffset dy="4" in="SourceAlpha" result="shadowOffsetOuter3"/>
+            <feGaussianBlur in="shadowOffsetOuter3" result="shadowBlurOuter3" stdDeviation="2.5"/>
+            <feColorMatrix in="shadowBlurOuter3" result="shadowMatrixOuter3" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.14 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="shadowMatrixOuter2"/>
+                <feMergeNode in="shadowMatrixOuter3"/>
+            </feMerge>
+        </filter>
+        <path id="d" d="M14 8H8v6H6V8H0V6h6V0h2v6h6z"/>
+        <path id="e" d="M88 65.35l-1.45-1.32C81.4 59.36 78 56.28 78 52.5c0-3.08 2.42-5.5 5.5-5.5 1.74 0 3.41.81 4.5 2.09 1.09-1.28 2.76-2.09 4.5-2.09 3.08 0 5.5 2.42 5.5 5.5 0 3.78-3.4 6.86-8.55 11.54L88 65.35z"/>
+        <path id="f" d="M2 4c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2C.9 6 0 6.9 0 8s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+        <path id="h" d="M12.502 6.491h-.794l-.276.274A6.47 6.47 0 0 1 13 10.991a6.5 6.5 0 1 1-6.5-6.5 6.47 6.47 0 0 1 4.225 1.566l.276-.274v-.792L15.999 0l1.491 1.491-4.988 5zm-6.002 0a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <rect width="200" height="142" rx="2"/>
+        <path fill="#EFEFF4" d="M200 71H-13v40h213z"/>
+        <path fill="#A53BC2" fill-rule="nonzero" d="M200 101.5v10H-13v-10z" opacity=".5"/>
+        <path fill="#A53BC2" fill-rule="nonzero" d="M98.5 71h29v40h-29zM145 71h29v40h-29z" opacity=".5"/>
+        <path fill="#A53BC2" fill-rule="nonzero" d="M200.5 70.5v10h-213v-10z" opacity=".5"/>
+        <g transform="translate(0 35)">
+            <mask id="c" fill="#fff">
+                <use xlink:href="#a"/>
+            </mask>
+            <use fill="#000" filter="url(#b)" xlink:href="#a"/>
+            <use fill="#A53BC2" xlink:href="#a"/>
+            <g mask="url(#c)">
+                <use fill="#FFF" transform="translate(21 21)" xlink:href="#d"/>
+            </g>
+            <use fill="#727272" xlink:href="#e"/>
+        </g>
+        <g transform="translate(176 83)">
+            <mask id="g" fill="#fff">
+                <use xlink:href="#f"/>
+            </mask>
+            <g fill="#000" fill-opacity=".54" mask="url(#g)">
+                <path d="M-4-4H8v24H-4z"/>
+            </g>
+        </g>
+        <g transform="translate(127 82)">
+            <mask id="i" fill="#fff">
+                <use xlink:href="#h"/>
+            </mask>
+            <g fill="#000" fill-opacity=".54" mask="url(#i)">
+                <path d="M-3-3h24v24H-3z"/>
+            </g>
+        </g>
+        <path stroke="#FFF" stroke-dasharray="5" stroke-linecap="square" d="M200.5 117.5l-213.5-.25"/>
+        <path stroke="#9517B8" d="M56 91H0V35h56z"/>
+    </g>
+</svg>

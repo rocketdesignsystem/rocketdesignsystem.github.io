@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="142" viewBox="0 0 200 142">
+    <defs>
+        <path id="a" d="M222 0H0v48h222z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <rect width="200" height="142" rx="2"/>
+        <g transform="translate(0 47)">
+            <mask id="b" fill="#fff">
+                <use xlink:href="#a"/>
+            </mask>
+            <use fill="#EFEFF4" xlink:href="#a"/>
+            <text fill="#727272" font-family="SourceSansPro-Semibold, Source Sans Pro" font-size="16" font-weight="500" letter-spacing="1.333" mask="url(#b)">
+                <tspan x="189" y="31">ITEM 3</tspan>
+            </text>
+        </g>
+        <path fill="#20211F" d="M20 93h73v2H20z"/>
+        <text fill="#20211F" font-family="SourceSansPro-Semibold, Source Sans Pro" font-size="16" font-weight="500" letter-spacing="1.333" transform="translate(-.5 36.016)">
+            <tspan x="31.5" y="41.984">ITEM 1</tspan>
+        </text>
+        <text fill="#727272" font-family="SourceSansPro-Semibold, Source Sans Pro" font-size="16" font-weight="500" letter-spacing="1.333" transform="translate(-.5 36.016)">
+            <tspan x="108.5" y="41.984">ITEM 2</tspan>
+        </text>
+        <path fill="#A53BC2" fill-rule="nonzero" d="M108 95V47H83v48zM30.5 95V47H.5v48zM187.5 95V47h-25v48z" opacity=".5"/>
+        <path stroke="#FFF" stroke-dasharray="3" stroke-linecap="square" d="M20.328 105.469l73.172.031M.5 37.5h222"/>
+    </g>
+</svg>

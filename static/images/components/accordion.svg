@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="142" viewBox="0 0 200 142">
+    <defs>
+        <path id="a" d="M0 .246h185v30.508H0z"/>
+        <path id="b" d="M0 .246h185v30.508H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <rect width="200" height="142" x=".5" rx="2" transform="translate(-.5)"/>
+        <use fill="#FFF" transform="translate(8 40.5)" xlink:href="#a"/>
+        <path d="M16 48.5h12v12H16z"/>
+        <path stroke="#20211F" stroke-linejoin="round" d="M25.75 53.75C25.75 56.638 22 59 22 59s-3.75-2.438-3.75-5.325a3.705 3.705 0 0 1 3.697-3.75 3.863 3.863 0 0 1 3.803 3.825zM22 54.875a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25z"/>
+        <text fill="#20211F" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16" transform="translate(8 40.5)">
+            <tspan x="26.208" y="16.778">Title</tspan>
+        </text>
+        <path d="M170 49.5h12v12h-12z"/>
+        <path stroke="#20211F" stroke-linejoin="round" d="M179 54l-3 3-3-3"/>
+        <use fill="#FFF" transform="translate(8 71.5)" xlink:href="#b"/>
+        <path d="M16 79.5h12v12H16z"/>
+        <path stroke="#20211F" stroke-linejoin="round" d="M25.75 84.75C25.75 87.638 22 90 22 90s-3.75-2.438-3.75-5.325a3.705 3.705 0 0 1 3.697-3.75 3.863 3.863 0 0 1 3.803 3.825zM22 85.875a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25z"/>
+        <text fill="#20211F" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16" transform="translate(8 71.5)">
+            <tspan x="26.208" y="16.778">Title</tspan>
+        </text>
+        <path d="M170 80.5h12v12h-12z"/>
+        <path stroke="#20211F" stroke-linejoin="round" d="M179 85l-3 3-3-3"/>
+        <path fill="#A53BC2" d="M193 60.5v11H7v-11zM192.5 92v10H7.5V92z" opacity=".5"/>
+        <path fill="#A53BC2" d="M192.5 71v7H7.5v-7zM192.5 40v8H7.5v-8z" opacity=".5"/>
+        <path stroke="#9517B8" d="M182.5 93h-14V79h14zM182.5 62h-14V48h14z"/>
+        <path fill="#A53BC2" d="M192.5 102h-10V40h10z" opacity=".5"/>
+        <path stroke="#9517B8" d="M28.5 92h-14V78h14zM28.5 61h-14V47h14z"/>
+        <path fill="#A53BC2" d="M17.5 102h-10V40h10z" opacity=".5"/>
+        <path stroke="#FFF" stroke-dasharray="5" stroke-linecap="square" d="M7.875 113.75l184.625-.25M.5 102.375V40.5"/>
+    </g>
+</svg>

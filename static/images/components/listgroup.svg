@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="142" viewBox="0 0 200 142">
+    <g fill="none" fill-rule="evenodd">
+        <rect width="200" height="142" rx="2"/>
+        <g fill="#FFF">
+            <text font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16" transform="translate(11 8)">
+                <tspan x="15" y="15">List item 1</tspan>
+            </text>
+            <path fill-opacity=".6" d="M11 47h175v1H11z"/>
+        </g>
+        <g fill="#FFF">
+            <text font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16" transform="translate(11 58)">
+                <tspan x="15" y="15">List item 2</tspan>
+            </text>
+            <path fill-opacity=".6" d="M11 97h175v1H11z"/>
+        </g>
+        <text fill="#FFF" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16" transform="translate(11 108)">
+            <tspan x="15" y="15">List item 3</tspan>
+        </text>
+        <path fill="#A53BC2" fill-rule="nonzero" d="M27.5 148.5v-132h-17v132z" opacity=".5"/>
+        <path fill="#A53BC2" fill-rule="nonzero" d="M186 28H11v20h175z" opacity=".5"/>
+        <path stroke="#FFF" stroke-dasharray="3" stroke-linecap="square" d="M11.328 8.484L186.5 8.5"/>
+    </g>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="142" viewBox="0 0 200 142">
+    <g fill="none" fill-rule="evenodd">
+        <rect width="200" height="142" rx="2"/>
+        <g transform="translate(5 29)">
+            <g transform="translate(0 12)">
+                <rect width="92" height="30" fill="#EFEFF4" rx="15"/>
+                <text fill="#20211F" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16">
+                    <tspan x="37.084" y="15">Label</tspan>
+                </text>
+                <path d="M15 7h16v16H15z"/>
+                <path stroke="#20211F" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M26.99 12l-5.5 6-2.48-2.46" opacity=".85"/>
+            </g>
+            <path stroke="#FFF" stroke-dasharray="5" stroke-linecap="square" d="M43.375 94.5h87M29.5 76.75L30 48.5"/>
+            <rect width="92" height="30" x="39" y="54" fill="#EFEFF4" rx="15"/>
+            <text fill="#20211F" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16">
+                <tspan x="76.084" y="69">Label</tspan>
+            </text>
+            <path fill="#A53BC2" fill-rule="nonzero" d="M131 54v11H39V54zM131 74v10H39V74z" opacity=".5"/>
+            <path fill="#A53BC2" fill-rule="nonzero" d="M192 42.5v12H1v-12zM191.5 1v11H.5V1z" opacity=".5"/>
+            <path fill="#A53BC2" fill-rule="nonzero" d="M91.5.5h8v54h-8zM39 54h16v30H39zM115 54h16v30h-16z" opacity=".5"/>
+            <path d="M54 61h16v16H54z"/>
+            <path stroke="#20211F" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M65.99 66l-5.5 6-2.48-2.46" opacity=".85"/>
+            <g transform="translate(99 12)">
+                <rect width="92" height="30" fill="#EFEFF4" rx="15"/>
+                <text fill="#20211F" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16">
+                    <tspan x="37.084" y="15">Label</tspan>
+                </text>
+                <path d="M15 7h16v16H15z"/>
+                <path stroke="#20211F" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M26.99 12l-5.5 6-2.48-2.46" opacity=".85"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="142" viewBox="0 0 200 142">
+    <g fill="none" fill-rule="evenodd">
+        <rect width="200" height="142" rx="2"/>
+        <text fill="#FFF" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16">
+            <tspan x="73" y="35">Checkbox 1</tspan>
+        </text>
+        <text fill="#FFF" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16">
+            <tspan x="74" y="72">Checkbox 2</tspan>
+        </text>
+        <text fill="#FFF" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16">
+            <tspan x="74" y="107">Checkbox 3</tspan>
+        </text>
+        <path stroke="#9517B8" d="M46 46H24V24h22zM46 82H24V60h22zM46 118H24V96h22z"/>
+        <path fill="#A53BC2" fill-rule="nonzero" d="M189 46.5v13H23v-13z" opacity=".5"/>
+        <path fill="#A53BC2" fill-rule="nonzero" d="M47 24h25v95H47z" opacity=".5"/>
+        <path fill="#A53BC2" fill-rule="nonzero" d="M189 82.5v13H23v-13z" opacity=".5"/>
+        <path d="M23 22.625v25h24v-25z"/>
+        <path fill="#FFF" d="M42 25.125a2 2 0 0 1 2 2v14.75a2 2 0 0 1-2 2H28a2 2 0 0 1-2-2v-14.75a2 2 0 0 1 2-2h14zm-1.664 5.485a.98.98 0 0 0-1.386.028l-5.073 5.283-1.71-1.687-.01-.01a1 1 0 0 0-1.413.03l-.03.03a1 1 0 0 0 .02 1.404l2.373 2.34.01.01a.994.994 0 0 0 .841.267.978.978 0 0 0 .75-.3l5.698-5.937a1 1 0 0 0 0-1.386l-.042-.044z"/>
+        <g transform="translate(23 59)">
+            <path d="M0 .625v25h24v-25z"/>
+            <rect width="18" height="18.75" x="3" y="3.125" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" rx="2"/>
+        </g>
+        <g transform="translate(23 94)">
+            <path d="M0 .625v25h24v-25z"/>
+            <rect width="18" height="18.75" x="3" y="3.125" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" rx="2"/>
+        </g>
+        <g>
+            <rect width="200" height="142" rx="2"/>
+        </g>
+    </g>
+</svg>

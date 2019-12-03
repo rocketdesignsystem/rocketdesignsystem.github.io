@@ -1,9 +1,27 @@
-<!DOCTYPE html><html lang="en"><head><title>Rocket Design System</title><meta charset="utf-8"><meta name="description" content="Design system for Coles group"><meta name="author" content="Busheng Xi"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><link rel="stylesheet" type="text/css" href="/static/vendor/prism/prism.css"><link id="__rocket-fonts" rel="stylesheet" type="text/css" href="/static/rocket-styles/rocket.coles.fonts.css"><link id="__rocket-main" rel="stylesheet" type="text/css" href="/static/rocket-styles/rocket.coles.css"><link rel="stylesheet" type="text/css" href="/static/styles.css"><link rel="shortcut icon" href="/static/favicon.ico"></head><body><div class="__root __website"><header class="__header"><div class="__top-nav"><div class="__top-nav__mobile-icon"></div><div class="__top-nav__logo"><a class="rocket__a rocket__a-image" href="/">Rocket Design System.</a></div><div class="__top-nav__items"><nav class="rocket__nav rocket__nav--secondary"><a class="rocket__nav__item" href="/system.html">System</a><a class="rocket__nav__item rocket__nav__item--active" href="/resources.html">Resources</a><a class="rocket__nav__item" href="/accessibility.html">Accessibility</a><a class="rocket__nav__item" href="/support.html">Support</a></nav></div></div></header><div class="__content"><main class="__main"><template id="rocket-card-template"><style>.__card {
+<!DOCTYPE html><html lang="en"><head><title>Rocket Design System</title><meta charset="utf-8"><meta name="description" content="Design system for Coles group"><meta name="author" content="Busheng Xi"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><link rel="stylesheet" type="text/css" href="/static/vendor/prism/prism.css"><link id="__rocket-fonts" rel="stylesheet" type="text/css" href="/static/rocket-styles/rocket.coles.fonts.css"><link id="__rocket-main" rel="stylesheet" type="text/css" href="/static/rocket-styles/rocket.coles.css"><link rel="stylesheet" type="text/css" href="/static/styles.css"><link rel="shortcut icon" href="/static/favicon.ico"></head><body><div class="__root __website"><header class="__header"><div class="__top-nav"><div class="__top-nav__mobile-icon"></div><div class="__top-nav__logo"><a class="rocket__a rocket__a-image" href="/">Rocket Design System.</a></div><div class="__top-nav__items"><nav class="rocket__navbar rocket__navbar--secondary"><ul class="rocket__navbar__list"><li class="rocket__navbar__item"><a class="rocket__navbar__link" href="/system.html">System</a></li><li class="rocket__navbar__item"><a class="rocket__navbar__link rocket__nav__item--active" href="/resources.html">Resources</a></li><li class="rocket__navbar__item">   <a class="rocket__navbar__link" href="/accessibility.html">Accessibility</a></li><li class="rocket__navbar__item">   <a class="rocket__navbar__link" href="/support.html">Support</a></li></ul></nav></div></div></header><div class="__content"><template id="rocket-card-template"><style>.__card {
 
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.22), 0 -1px 2px 0 rgba(0, 0, 0, 0.05);
     background-color: white;
     border-radius: 4px;
     box-sizing: border-box;
+    display: block;
+    text-decoration: none;
+}
+
+.__card:hover,
+.__card:focus {
+
+    text-decoration: underline;     
+}
+
+.__card:active {
+
+    color: #20211f;
+}
+
+.__card__link {
+
+    display: none;
 }
 
 .__card__thumbnail {
@@ -37,7 +55,7 @@
     line-height: 1.5;
     color: #727272;
 }
-</style><div class="__card"><div class="__card__thumbnail"><slot name="image"></slot></div><div class="__card__description"><div class="__card__title"><slot name="title">None</slot></div><div class="__card__content"><slot name="content">None</slot></div></div></div></template><script>customElements.define( 'rocket-card',
+</style><a class="__card" href="https://coles.invisionapp.com" target="_blank"><div class="__card__link"><slot name="link"></slot></div><div class="__card__thumbnail"><slot name="image"></slot></div><div class="__card__description"><div class="__card__title"><slot name="title">None</slot></div><div class="__card__content"><slot name="content">None</slot></div></div></a></template><script>customElements.define( 'rocket-card',
 
     class extends HTMLElement {
 
@@ -46,12 +64,26 @@
             super();
 
             const tpl = document.getElementById( 'rocket-card-template' );
+            const cloned = tpl.content.cloneNode(true);
 
-            this.attachShadow( {mode: 'open'} )
-                .appendChild( tpl.content.cloneNode(true) );
+            this.attachShadow( {mode: 'open'} ).appendChild( cloned );
+        }
+
+        connectedCallback() {
+
+            let linkSlot = this.shadowRoot.querySelector( '.__card__link slot' );
+
+            linkSlot.addEventListener( 'slotchange', event => {
+                
+                let elements = linkSlot.assignedElements();
+                let link = elements[0].innerText;
+                let cardElement = linkSlot.parentElement.parentElement;
+
+                cardElement.setAttribute( 'href', link );
+            } )
         }
     }
-);</script><div class="__main__content __main__content--resources"><div class="rocket"><h1>Resources</h1><p>Does not include JS, CSS files.</p><h2>For Designers</h2><p>Here are the resources for download.</p><div class="__resources"><rocket-card class="__resources__card"><div class="__resource__card__background __resource__card__background--colesgroup" slot="image"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="213" height="142" viewBox="0 0 213 142">
+);</script><main class="__main"><div class="__main__content __main__content--resources"><div class="rocket"><h1>Resources</h1><p>Does not include JS, CSS files.</p><h2>For Designers</h2><p>Here are the resources for download.</p><div class="__resources"><rocket-card class="__resources__card"><span aria-hidden="true" slot="link">https://coles.invisionapp.com/boards/JV3N1HGEQUT/</span><div class="__resource__card__background __resource__card__background--colesgroup" slot="image"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="213" height="142" viewBox="0 0 213 142">
 <g fill="none" fill-rule="evenodd">
 <rect width="211" height="142" rx="2" transform="translate(1)"/>
 <path fill="#E01A22" d="M45.14 53.36a8.956 8.956 0 1 0 0 4.388h-3.778a5.374 5.374 0 1 1 0-4.388h3.779z"/>
@@ -71,7 +103,7 @@
 <path fill="#20211F" d="M152.774 97.373a.095.095 0 0 0 0 .03v-.06a.106.106 0 0 0 0 .03zM151.645 97.342v.1a.232.232 0 0 0 0-.048.092.092 0 0 0 0-.052z"/>
 </g>
 </g>
-</svg></div><span slot="title">Coles Group</span><span slot="content">Design Kit</span></rocket-card><rocket-card class="__resources__card"><div class="__resource__card__background __resource__card__background--coles" slot="image"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="213" height="142" viewBox="0 0 213 142">
+</svg></div><span slot="title">Coles Group</span><span slot="content">Design Kit</span></rocket-card><rocket-card class="__resources__card"><span aria-hidden="true" slot="link">https://coles.invisionapp.com/boards/NC3N1HGFEZM/</span><div class="__resource__card__background __resource__card__background--coles" slot="image"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="213" height="142" viewBox="0 0 213 142">
 <g fill="none" fill-rule="evenodd">
 <rect width="211" height="142" rx="2" transform="translate(1)"/>
 <g fill="#FFF" fill-rule="nonzero">
@@ -88,7 +120,7 @@
 <path fill="#FFF" d="M167.267 111.09h-.598c-.09-6.02-4.14-11.344-10.14-13.325h7.704c.249.655.963 1.04 1.684.909.72-.132 1.233-.741 1.207-1.437-.026-.695-.583-1.269-1.312-1.351-.729-.083-1.413.35-1.611 1.02H152.86v-.55a.439.439 0 0 0-.446-.422h-2.08a.435.435 0 0 0-.446.423v.549h-11.046c-.195-.668-.875-1.102-1.602-1.021-.726.08-1.282.651-1.309 1.344-.026.693.485 1.3 1.203 1.431.718.13 1.43-.255 1.675-.908h7.837c-6 1.992-10.06 7.313-10.175 13.338h-.695a.455.455 0 0 0-.316.123.409.409 0 0 0-.13.3v1.971c0 .112.047.22.13.298a.456.456 0 0 0 .316.122h2.073a.435.435 0 0 0 .446-.42v-1.971c0-.234-.2-.423-.446-.423h-.486c.148-6.726 5.481-12.33 12.525-13.161v.399c0 .112.047.22.13.3.084.078.198.123.316.123h2.08a.439.439 0 0 0 .446-.423v-.45c7.238.622 12.812 6.324 12.917 13.212h-.583a.435.435 0 0 0-.446.423v1.971c.002.233.201.42.446.42h2.08a.431.431 0 0 0 .439-.42v-1.971a.409.409 0 0 0-.13-.3.455.455 0 0 0-.316-.123zm-1.634-14.361c.328 0 .594.251.594.562 0 .311-.266.563-.594.563-.328 0-.594-.252-.594-.563 0-.31.266-.562.594-.562zm-28.223 1.125c-.328 0-.594-.252-.594-.563 0-.31.266-.562.594-.562.328 0 .593.251.593.562 0 .15-.062.293-.173.398a.61.61 0 0 1-.42.165zm0 14.079v1.128h-1.188v-1.128h1.188zm14.561-14.556a.09.09 0 0 0 0 .03v.498h-1.187v-.464a.22.22 0 0 0 0-.047.087.087 0 0 0 0-.045v-.57h1.187v.563a.1.1 0 0 0 0 .031v.004zm14.85 15.688h-1.188v-1.132h1.187v1.132z"/>
 <path fill="#20211F" d="M151.971 97.373a.09.09 0 0 0 0 .03v-.06a.1.1 0 0 0 0 .03zM150.78 97.342v.1a.22.22 0 0 0 0-.048.087.087 0 0 0 0-.052z"/>
 </g>
-</svg></div><span slot="title">Coles</span><span slot="content">Design Kit</span></rocket-card><rocket-card class="__resources__card"><div class="__resource__card__background __resource__card__background--vintagecellars" slot="image"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="213" height="142" viewBox="0 0 213 142">
+</svg></div><span slot="title">Coles</span><span slot="content">Design Kit</span></rocket-card><rocket-card class="__resources__card"><span aria-hidden="true" slot="link">https://coles.invisionapp.com/boards/AC3N1HG4GJY/</span><div class="__resource__card__background __resource__card__background--vintagecellars" slot="image"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="213" height="142" viewBox="0 0 213 142">
 <g fill="none" fill-rule="evenodd">
 <rect width="211" height="142" rx="2" transform="translate(1)"/>
 <path fill="#FFF" d="M41.46 62.829h1.885V51.82H41.46z"/>
@@ -135,7 +167,7 @@
 <path fill="#20211F" d="M151.971 97.373a.09.09 0 0 0 0 .03v-.06a.1.1 0 0 0 0 .03zM150.78 97.342v.1a.22.22 0 0 0 0-.048.087.087 0 0 0 0-.052z"/>
 </g>
 </g>
-</svg></div><span slot="title">Vintage Cellars</span><span slot="content">Design Kit</span></rocket-card><rocket-card class="__resources__card"><div class="__resource__card__background __resource__card__background--liquorland" slot="image"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="213" height="142" viewBox="0 0 213 142">
+</svg></div><span slot="title">Vintage Cellars</span><span slot="content">Design Kit</span></rocket-card><rocket-card class="__resources__card"><span aria-hidden="true" slot="link">https://coles.invisionapp.com/boards/TC3N1HGPRKD/</span><div class="__resource__card__background __resource__card__background--liquorland" slot="image"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="213" height="142" viewBox="0 0 213 142">
 <g fill="none" fill-rule="evenodd">
 <rect width="211" height="142" x="-3.165" rx="2" transform="translate(4.165)"/>
 <g transform="translate(91.33 92.708)">
@@ -158,7 +190,7 @@
 <path fill="#FD0" d="M155.352 59.56h7.5c5.363 0 6.625-4.73 7.476-8.401.928-4 .954-4.895.464-6.212-.515-1.365-1.805-2.188-4.098-2.188h-7.424l-3.918 16.8zm8.274-13.413h.747c1.599 0 1.599.87 1.212 2.565l-1.134 4.894c-.31 1.271-.8 2.565-2.088 2.565h-1.057l2.32-10.024zm-12.656 6.871h-.052l-.232-10.26h-5.594l-3.918 16.802h4.692l2.423-10.354h.051l.438 10.354h5.517l3.918-16.801h-4.846l-2.397 10.26zm-15.57.306h-2.345l2.81-6.895h.051l-.516 6.895zm-.309 6.236h5.31l-.412-16.801h-6.47l-8.275 16.8h5.31l1.108-2.564h3.455l-.026 2.565zm-19.694 0h8.97l1.908-3.812h-4.846l3.042-12.99h-5.156l-3.918 16.802zm-14.15 0h5.154l1.547-6.613h.954c.901 0 1.34.26 1.005 1.695-.181.824-.31 1.67-.49 2.494-.206.824-.438 2.047-.18 2.424h5.464l.052-.235a.7.7 0 0 1-.412-.495c-.078-.235 0-1.035.206-1.976l.335-1.388c.232-.99.464-2.119.18-2.872-.31-.8-1.134-1.27-2.14-1.34v-.048c1.883-.235 3.403-1.365 4.022-4.047.645-2.8-.49-4.4-4.047-4.4h-7.733l-3.918 16.8zm8.273-13.413h.594c1.16 0 1.83.33 1.52 1.718-.387 1.623-1.366 1.976-2.217 1.976h-.748l.85-3.694zm-20.596 5.012c-1.262 5.365-2.035 8.73 4.589 8.73 6.624 0 7.398-3.365 8.66-8.73 1.212-5.2 2.037-8.73-4.588-8.73-6.624 0-7.449 3.53-8.66 8.73zm7.94 0c-1.16 4.918-1.521 5.624-2.63 5.624-1.108 0-1.16-.706 0-5.624 1.134-4.918 1.522-5.624 2.63-5.624 1.108 0 1.134.706 0 5.624zm-14.796 3.6c-.335 1.436-.67 2.024-1.65 2.024-.98 0-1.057-.588-.722-2.024l2.81-12H77.35l-2.603 11.106c-.954 4.165-.078 6.024 4.949 6.024 4.563 0 6.805-2 7.734-6.024l2.603-11.106h-5.156l-2.81 12zm-12.425 7.86l3.66-2.424-1.675-2.023c1.624-1.506 2.19-3.93 2.913-7.013 1.211-5.2 2.036-8.73-4.589-8.73s-7.45 3.53-8.66 8.73c-1.264 5.365-2.037 8.73 4.588 8.73.334 0 .644 0 .927-.023.284-.023.567-.047.8-.07l2.036 2.823zm-.413-11.46c-1.16 4.918-1.52 5.624-2.629 5.624-1.108 0-1.16-.706 0-5.624 1.135-4.918 1.52-5.624 2.63-5.624 1.108 0 1.134.706 0 5.624zm-15.827 8.4h5.156l3.918-16.8h-5.155l-3.92 16.8zm-11.548 0H52.63l.877-3.811h-5.62l3.042-12.99h-5.156L41.855 59.56z"/>
 </g>
 </g>
-</svg></div><span slot="title">Liquorland</span><span slot="content">Design Kit</span></rocket-card><rocket-card class="__resources__card"><div class="__resource__card__background __resource__card__background--firstchoice" slot="image"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="213" height="142" viewBox="0 0 213 142">
+</svg></div><span slot="title">Liquorland</span><span slot="content">Design Kit</span></rocket-card><rocket-card class="__resources__card"><span aria-hidden="true" slot="link">https://coles.invisionapp.com/boards/K53N1HGQJBF/</span><div class="__resource__card__background __resource__card__background--firstchoice" slot="image"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="213" height="142" viewBox="0 0 213 142">
 <g fill="none" fill-rule="evenodd">
 <rect width="211" height="142" rx="2" transform="translate(1)"/>
 <rect width="211" height="142" x="3.165" rx="2" transform="translate(-2.165)"/>
@@ -256,7 +288,7 @@
 <path fill="#3DDC84" d="M129.827 46.89l8.029-13.17c.448-.753.173-1.709-.616-2.143-.79-.435-1.801-.187-2.27.555l-8.122 13.324c-13.113-5.588-28.123-5.588-41.237 0L77.49 32.132c-.469-.742-1.48-.99-2.27-.555-.789.434-1.063 1.39-.615 2.144l8.028 13.168c-13.846 7.103-23.248 20.316-24.621 35.912h96.344c-1.373-15.596-10.798-28.809-24.528-35.912zM84.03 69.785c-2.211 0-4.003-1.699-4.003-3.794 0-2.095 1.792-3.794 4.003-3.794 2.21 0 4.002 1.699 4.002 3.794 0 2.095-1.792 3.794-4.002 3.794zm44.355 0c-2.21 0-4.002-1.699-4.002-3.794 0-2.095 1.792-3.794 4.002-3.794s4.003 1.699 4.003 3.794c0 2.095-1.792 3.794-4.003 3.794z"/>
 </g>
 </g>
-</svg></div><span slot="title">Rocket Android</span><span slot="content">UI library for Android devices</span></rocket-card></div></div></div></main></div><footer class="__footer"><div class="__footer__get-in-touch"><div class="__footer__container __footer__container--get-in-touch"><div class="__get-in-touch"><div class="__get-in-touch__title">Get in touch</div><div class="__get-in-touch__content">We are always keen to hear ways in which we can improve our ever evolving Design system so get in touch with us on slack.</div><div class="__get-in-touch__links"><a class="__get-in-touch__link" href="https://rocketcommunity.slack.com/">Rocket Slack channel</a><a class="__get-in-touch__link" href="https://rocketcommunity.slack.com/">Signup for updates</a></div></div></div></div><div class="__footer-main"><div class="__footer__container __footer__container--main"><div class="__footer-main__title">Rocket Design System.</div><div class="__footer-main__content">Rocket is a design and front-end web framework for rapidly creating beautiful & accessible human-centred digital experiences across the Coles Group.</div><div class="__footer-main__links"><a class="rocket__a" href="https://www.colesgroup.com.au/">Coles Group</a><a class="rocket__a" href="https://www.coles.com.au/">Coles</a><a class="rocket__a" href="https://www.liquorland.com.au/">Liquorland</a><a class="rocket__a" href="https://www.firstchoiceliquor.com.au/">First Choice</a><a class="rocket__a" href="https://www.vintagecellars.com.au/">Vintage Cellars</a></div><div class="__footer-main--sponsors"><span class="__footer-main__powered-by">Powered by</span><span class="__footer-main__org"><svg xmlns="http://www.w3.org/2000/svg" width="126" height="24" viewBox="0 0 126 24">
+</svg></div><span slot="title">Rocket Android</span><span slot="content">UI library for Android devices</span></rocket-card></div></div></div></main></div><footer class="__footer"><div class="__footer__get-in-touch"><div class="__footer__container __footer__container--get-in-touch"><div class="__get-in-touch"><div class="__get-in-touch__title">Get in touch</div><div class="__get-in-touch__content">We are always keen to hear ways in which we can improve our ever evolving Design system so get in touch with us on slack.</div><div class="__get-in-touch__links"><a class="__get-in-touch__link" href="https://rocketcommunity.slack.com/">Rocket Slack channel</a></div></div></div></div><div class="__footer-main"><div class="__footer__container __footer__container--main"><div class="__footer-main__title">Rocket Design System.</div><div class="__footer-main__content">Rocket is a design and front-end web framework for rapidly creating beautiful & accessible human-centred digital experiences across the Coles Group.</div><div class="__footer-main__links"><a class="rocket__a" href="https://www.colesgroup.com.au/">Coles Group</a><a class="rocket__a" href="https://www.coles.com.au/">Coles</a><a class="rocket__a" href="https://www.liquorland.com.au/">Liquorland</a><a class="rocket__a" href="https://www.firstchoiceliquor.com.au/">First Choice</a><a class="rocket__a" href="https://www.vintagecellars.com.au/">Vintage Cellars</a></div><div class="__footer-main--sponsors"><span class="__footer-main__powered-by">Powered by</span><span class="__footer-main__org"><svg xmlns="http://www.w3.org/2000/svg" width="126" height="24" viewBox="0 0 126 24">
 <g fill="#FFF" fill-rule="nonzero">
 <path d="M14 9.285c-.879-3.424-4.21-5.667-7.77-5.231C2.673 4.49 0 7.468 0 11c0 3.532 2.672 6.51 6.23 6.946 3.56.436 6.891-1.807 7.77-5.231h-3c-.821 1.809-2.815 2.806-4.784 2.393-1.968-.414-3.375-2.126-3.375-4.108 0-1.982 1.407-3.694 3.375-4.108 1.969-.413 3.963.584 4.785 2.393H14zM29 11.002a7 7 0 1 0-14-.004 7 7 0 0 0 14 .004m-2.798 0a4.2 4.2 0 1 1-8.396 0 4.2 4.2 0 0 1 8.394 0M30 0h3v18h-3zM47.97 11.631c.02-.229.031-.461.03-.7.008-5.18-4.137-6.93-7-6.931-2.864 0-7.007 1.749-7 6.932C33.993 15.229 37.28 18 41.002 18c3.095.008 5.817-1.942 6.66-4.77h-3.17c-.648 1.274-2 2.092-3.49 2.11-1.95 0-3.698-1.429-4.005-3.711h8.01l2.963.002zM41 6.521c1.774-.002 3.333 1.117 3.817 2.738h-7.633c.485-1.621 2.044-2.74 3.818-2.739h-.003zM53.947 17.988c-3.779 0-5.947-1.71-5.947-4.694v-.06h2.959v.06c.127 1.589 1.193 2.362 3.25 2.362 1.712 0 2.776-.658 2.776-1.714 0-.896-.724-1.232-2.148-1.566l-2.088-.496a8.069 8.069 0 0 1-3.268-1.331c-.745-.612-1.147-1.515-1.086-2.444-.035-1.146.498-2.243 1.443-2.968a6.593 6.593 0 0 1 4.028-1.13 6.974 6.974 0 0 1 4.197 1.166c1 .743 1.568 1.884 1.536 3.081v.025h-2.932v-.024c-.079-1.283-1.084-1.963-2.908-1.963-1.434 0-2.325.533-2.325 1.39 0 .957.882 1.336 2.305 1.64l1.77.374c2.912.635 4.488 1.444 4.488 3.898.05 1.248-.536 2.443-1.576 3.22a7.579 7.579 0 0 1-4.476 1.176M62.818 11.229a5.435 5.435 0 0 0 1.506 3.923 5.011 5.011 0 0 0 3.78 1.546A4.951 4.951 0 0 0 71.8 15.12a5.868 5.868 0 0 0 1.467-3.867c-.01-1.3-.431-2.561-1.199-3.587-.965-1.269-2.458-1.979-4.012-1.909a5.018 5.018 0 0 0-3.737 1.559 5.439 5.439 0 0 0-1.498 3.886l-.002.026zM75 16.495c0 2.595-.808 4.248-1.96 5.393A7.208 7.208 0 0 1 68.05 24c-3.277 0-5.674-1.959-6.506-4.427h2.079c.379.72.915 1.34 1.565 1.807a5.055 5.055 0 0 0 2.91.992 5.004 5.004 0 0 0 3.648-1.607 5.42 5.42 0 0 0 1.44-3.837v-1.756c-.994 2.084-3.072 3.369-5.307 3.281-1.845.044-3.625-.702-4.925-2.063a7.146 7.146 0 0 1-1.95-5.136 7.163 7.163 0 0 1 1.936-5.165c1.3-1.372 3.087-2.126 4.939-2.086 2.22-.076 4.288 1.168 5.332 3.206V4.385H75v12.11zM110 18.62h-1.694v-2.43c-.726 1.772-2.491 2.835-4.813 2.81C99.428 18.924 98 16.038 98 12.72V5h1.766v7.367c0 2.937 1.258 4.911 4.186 4.886 2.71-.026 4.258-1.722 4.258-4.557V5H110v13.62zM124.185 11.106a5.334 5.334 0 0 0-1.515-3.865 5.085 5.085 0 0 0-3.783-1.531 5.162 5.162 0 0 0-3.726 1.581 5.65 5.65 0 0 0-1.471 3.865 5.338 5.338 0 0 0 1.507 3.826 5.09 5.09 0 0 0 3.739 1.544 5.092 5.092 0 0 0 3.748-1.552 5.34 5.34 0 0 0 1.5-3.843l.001-.025zM112 4.38h1.716v2.811c1.108-2.039 3.24-3.27 5.517-3.187 4.438 0 6.767 3.689 6.767 7.177 0 3.763-2.673 7.076-6.767 7.076-2.917 0-4.805-1.731-5.417-3.137V23h-1.814L112 4.38zM89 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14m0 1.775a5.225 5.225 0 1 1 0 10.45 5.225 5.225 0 0 1 0-10.45"/>
 <path d="M84.991 4.006L85 4h-1.898c-1.592.049-3.354.566-4.337 2.537V4.37H77V17h1.84v-6.597c0-2.99 1.45-4.589 4.048-4.605a8.378 8.378 0 0 1 2.103-1.792zM74.965 22c-.21.27-.442.526-.69.764-.087.083-.181.157-.275.236h36v-1H74.965z"/>

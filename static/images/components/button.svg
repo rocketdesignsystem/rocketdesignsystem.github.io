@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="142" viewBox="0 0 200 142">
+    <g fill="none" fill-rule="evenodd">
+        <rect width="200" height="142" rx="2"/>
+        <g transform="translate(14.5 42.25)">
+            <rect width="170" height="40" x=".5" y="8.75" fill="#FFF" rx="20"/>
+            <text fill="#20211F" font-family="SourceSansPro-Semibold, Source Sans Pro" font-size="16" font-weight="500" letter-spacing="1.333" transform="translate(39.5 18.75)">
+                <tspan x="1.816" y="14.592">ICON + LABEL</tspan>
+            </text>
+            <path d="M21.5 20.75h16v16h-16z"/>
+            <path stroke="#20211F" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M36.5 35.75l-3.757-3.757L36.5 35.75zm-8-14a6 6 0 1 0 0 12 6 6 0 0 0 0-12z" opacity=".85"/>
+            <path stroke="#FFF" stroke-dasharray="3" stroke-linecap="square" d="M.656 56.219H172M16 .5L38 1"/>
+            <path fill="#A53BC2" fill-rule="nonzero" d="M.5 33.75h171v15H.5zM.5 8.75h171v15H.5z" opacity=".5"/>
+        </g>
+    </g>
+</svg>

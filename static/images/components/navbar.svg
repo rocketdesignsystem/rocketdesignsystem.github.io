@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="142" viewBox="0 0 200 142">
+    <g fill="none" fill-rule="evenodd">
+        <rect width="200" height="142" x="-9" rx="2" transform="translate(9)"/>
+        <path d="M-8 51h24v24H-8z"/>
+        <path stroke="#727272" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.063 59.992l-5.102-.1a.44.44 0 0 1-.408-.31l-1.667-5.034a1.397 1.397 0 0 0-1.315-.977c-.592 0-1.12.392-1.314.977L.59 59.578a.44.44 0 0 1-.408.309l-5.102.1c-.593.011-1.114.413-1.297 1.001a1.487 1.487 0 0 0 .484 1.606l4.073 3.217c.147.116.209.315.155.499l-1.485 5.096c-.13.441-.05.92.212 1.29.263.37.678.59 1.12.59.284-.002.561-.095.793-.268l4.187-3.05a.423.423 0 0 1 .5 0l4.186 3.05c.231.173.509.266.793.268.444.003.862-.214 1.128-.585.265-.371.345-.852.215-1.295L8.648 66.31a.469.469 0 0 1 .155-.499l4.073-3.212a1.487 1.487 0 0 0 .484-1.606c-.183-.588-.704-.99-1.297-1z"/>
+        <path stroke="#9517B8" d="M16 75H-8V51h24zM112 75H88V51h24zM64 75H40V51h24zM160 75h-24V51h24zM208 75h-24V51h24z"/>
+        <path d="M88 52h24v24H88z"/>
+        <path stroke="#727272" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M107.714 70.857l-4.285-4.286 4.285 4.286zm-2.571-9a6.429 6.429 0 1 0-12.857 0 6.429 6.429 0 0 0 12.857 0z"/>
+        <path d="M136 51h24v24h-24z"/>
+        <path stroke="#727272" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M139 55.5h5.4a3.585 3.585 0 0 1 3.6 3.6V72a3 3 0 0 0-2.7-3H139V55.5zm18 0h-5.4a3.525 3.525 0 0 0-3.6 3V72c0-.885 1.215-3 2.7-3h6.3V55.5z"/>
+        <g>
+            <path d="M184 51h24v24h-24z"/>
+            <path fill="#727272" d="M186.571 60.429a2.571 2.571 0 1 1 0 5.142 2.571 2.571 0 0 1 0-5.142zm9.429 0a2.571 2.571 0 1 1 0 5.142 2.571 2.571 0 0 1 0-5.142zm9.429 0a2.571 2.571 0 1 1 0 5.142 2.571 2.571 0 0 1 0-5.142z"/>
+        </g>
+        <path fill="#A53BC2" fill-rule="nonzero" d="M208 75v12H-8V75zM208 39.5v12H-8v-12z" opacity=".5"/>
+        <path fill="#A53BC2" fill-rule="nonzero" d="M40 87H16V39h24zM88 87H64V39h24zM136 87h-24V39h24zM184 87h-24V39h24z" opacity=".5"/>
+        <text fill="#FFF" font-family="SourceSansPro-Semibold, Source Sans Pro" font-size="12" font-weight="500" transform="translate(-9)">
+            <tspan x="45.802" y="87.444">Lists</tspan>
+        </text>
+        <g>
+            <path d="M40 51h24v24H40z"/>
+            <path fill="#FFF" d="M58.571 53.571a2 2 0 0 1 2 2V70.43a2 2 0 0 1-2 2H45.43a2 2 0 0 1-2-2V55.57a2 2 0 0 1 2-2H58.57zM56.286 66.43h-8.572a.857.857 0 0 0 0 1.714h8.572a.857.857 0 1 0 0-1.714zm0-4.286h-8.572a.857.857 0 0 0-.107 1.707l.107.007h8.572a.857.857 0 0 0 0-1.714zm0-4.286h-8.572a.857.857 0 0 0-.107 1.708l.107.006h8.572a.857.857 0 0 0 0-1.714z"/>
+        </g>
+        <path stroke="#FFF" stroke-dasharray="5" stroke-linecap="square" d="M-8.125 95.75L209.5 95.5M-8.188 30.625l217.625-.25"/>
+    </g>
+</svg>

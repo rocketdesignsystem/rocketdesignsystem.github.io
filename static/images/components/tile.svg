@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="142" viewBox="0 0 200 142">
+    <g fill="none" fill-rule="evenodd">
+        <rect width="200" height="142" rx="2"/>
+        <path fill="#EFEFF4" d="M52.374 93.054l109.424-.132a2 2 0 0 1 2.003 2.003l-.03 25.69a2 2 0 0 1-1.999 1.998l-109.424.132a2 2 0 0 1-2.003-2.002l.031-25.691a2 2 0 0 1 1.998-1.998z"/>
+        <path stroke="#727272" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M86.507 107.53l63.475-.076M86.513 102.658l63.475-.077M86.502 112.442l63.474-.077" opacity=".6"/>
+        <path stroke="#727272" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M78.286 107.622c-.004 4.05-3.247 7.336-7.241 7.34-3.995.005-7.23-3.273-7.224-7.322.005-4.05 3.247-7.336 7.241-7.34 3.995-.006 7.23 3.273 7.224 7.322" opacity=".5"/>
+        <path fill="#EFEFF4" d="M52.374 58.251l109.424-.131a2 2 0 0 1 2.003 2.002l-.03 25.69a2 2 0 0 1-1.999 1.999l-109.424.131a2 2 0 0 1-2.003-2.002l.031-25.691a2 2 0 0 1 1.998-1.998z"/>
+        <path stroke="#727272" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M86.507 72.727l63.475-.076M86.513 67.855l63.475-.076M86.502 77.639l63.474-.077" opacity=".6"/>
+        <path stroke="#727272" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M78.286 72.82c-.004 4.048-3.247 7.335-7.241 7.34-3.995.004-7.23-3.274-7.224-7.323.005-4.05 3.247-7.336 7.241-7.34 3.995-.005 7.23 3.273 7.224 7.322" opacity=".5"/>
+        <g>
+            <path fill="#EFEFF4" d="M68.422 19.317l108.215 17.017a2 2 0 0 1 1.665 2.291l-3.968 24.876a2 2 0 0 1-2.286 1.66L63.832 48.144a2 2 0 0 1-1.664-2.291l3.968-24.876a2 2 0 0 1 2.286-1.66z"/>
+            <path stroke="#727272" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M99.948 38.722l62.77 9.871M100.702 33.992l62.771 9.871M99.187 43.49l62.771 9.871" opacity=".6"/>
+            <path stroke="#727272" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M91.805 37.523c-.627 3.931-4.338 6.615-8.288 5.993-3.95-.62-6.644-4.311-6.017-8.242.627-3.931 4.338-6.615 8.288-5.993 3.95.62 6.644 4.311 6.017 8.242" opacity=".5"/>
+        </g>
+        <path fill="#A53BC2" fill-rule="nonzero" d="M164 93v6H50v-6z" opacity=".5"/>
+        <path fill="#A53BC2" fill-rule="nonzero" d="M50 93h12v31H50zM151 93h13v31h-13z" opacity=".5"/>
+        <path fill="#A53BC2" fill-rule="nonzero" d="M164.5 116.5v7h-114v-7z" opacity=".5"/>
+        <path stroke="#FFF" stroke-dasharray="5" stroke-linecap="square" d="M53.875 132l118.75.5M40.75 120.75l.5-28.25"/>
+    </g>
+</svg>

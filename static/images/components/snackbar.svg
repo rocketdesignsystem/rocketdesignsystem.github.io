@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="142" viewBox="0 0 200 142">
+    <defs>
+        <rect id="a" width="242" height="60" rx="4"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <rect width="200" height="142" rx="2"/>
+        <rect width="200" height="142" rx="2"/>
+        <g transform="translate(-21 41)">
+            <mask id="b" fill="#fff">
+                <use xlink:href="#a"/>
+            </mask>
+            <use fill="#20211F" xlink:href="#a"/>
+            <text fill="#36C88C" font-family="SourceSansPro-Semibold, Source Sans Pro" font-size="12" font-weight="500" letter-spacing="1" mask="url(#b)">
+                <tspan x="179.012" y="30.812">ACTION</tspan>
+            </text>
+            <text fill="#FFF" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="16" mask="url(#b)">
+                <tspan x="20" y="31">Good morning</tspan>
+            </text>
+        </g>
+        <path stroke="#9517B8" d="M205 95h-48V47h48zM123 95H-15V47h138z"/>
+        <path stroke="#FFF" stroke-dasharray="3" stroke-linecap="square" d="M.5 111.5h137M157.156 111.5H205.5"/>
+    </g>
+</svg>
