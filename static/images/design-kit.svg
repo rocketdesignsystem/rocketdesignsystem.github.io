@@ -1,0 +1,11 @@
+<svg width="58px" height="54px" viewBox="0 0 58 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Working" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.65">
+        <g id="Resources" transform="translate(-180.000000, -506.000000)" stroke="#20211F" stroke-width="2">
+            <g id="DesignKit" transform="translate(181.000000, 507.296875)">
+                <ellipse id="Oval" cx="43" cy="14.5" rx="13" ry="12.5"></ellipse>
+                <rect id="Rectangle" x="9" y="28" width="23" height="23" rx="1"></rect>
+                <path d="M1.29977763,21 L24.7002224,21 C25.1686774,21 25.6008571,20.7598697 25.8315057,20.3716516 C26.0621543,19.9834334 26.0555979,19.5070874 25.8143435,19.1247574 L14.1141212,0.557998906 C13.861892,0.208689591 13.4452147,0 13,0 C12.5547853,0 12.138108,0.208689591 11.8858788,0.557998906 L0.185656451,19.1247574 C-0.0555979148,19.5070874 -0.0621543101,19.9834334 0.168494282,20.3716516 C0.399142875,20.7598697 0.831322572,21 1.29977763,21 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>

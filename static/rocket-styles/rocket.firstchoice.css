@@ -1,5 +1,16 @@
-/* Breakpoints */
-.sr-only {
+/* { Button defaults ******************************************************************************/
+/* } **********************************************************************************************/
+/* { Night or dark mode - primary button **********************************************************/
+/* } **********************************************************************************************/
+/* { Night or dark mode - secondary button ********************************************************/
+/* } **********************************************************************************************/
+/* { Night or dark mode - tertiary button *********************************************************/
+/* } **********************************************************************************************/
+/* { Link *****************************************************************************************/
+/* } **********************************************************************************************/
+/* { Breakpoints **********************************************************************************/
+/* } **********************************************************************************************/
+.rocket__screenreader {
   position: absolute;
   left: -10000px;
   top: auto;
@@ -13,7 +24,11 @@
   --rocket-orange: #FF8833;
   --rocket-turquoise: #06CFD2;
   --rocket-blue: #66BFFF;
-  --rocket-violet: #DF80FF; }
+  --rocket-violet: #DF80FF;
+  --rocket-brand-color: #fbaa19;
+  --rocket-brand-color-variant: #c97c15;
+  --rocket-brand-color-2: transparent;
+  --rocket-brand-color-2-variant: transparent; }
 
 .rocket .rocket__d1,
 .rocket__d1 {
@@ -909,6 +924,34 @@
       .rocket__a:visited:hover:active,
       .rocket__a:visited:focus:active {
         color: #20211f; }
+  .rocket .rocket a--night, .rocket .rocket__a--night,
+  .rocket a--night,
+  .rocket__a--night {
+    color: white; }
+    .rocket .rocket a--night:hover, .rocket .rocket a--night:focus, .rocket .rocket__a--night:hover, .rocket .rocket__a--night:focus,
+    .rocket a--night:hover,
+    .rocket a--night:focus,
+    .rocket__a--night:hover,
+    .rocket__a--night:focus {
+      color: white; }
+      .rocket .rocket a--night:hover:before, .rocket .rocket a--night:focus:before, .rocket .rocket__a--night:hover:before, .rocket .rocket__a--night:focus:before,
+      .rocket a--night:hover:before,
+      .rocket a--night:focus:before,
+      .rocket__a--night:hover:before,
+      .rocket__a--night:focus:before {
+        box-shadow: 0 0 0 2px white; }
+    .rocket .rocket a--night:visited:hover, .rocket .rocket a--night:visited:focus, .rocket .rocket__a--night:visited:hover, .rocket .rocket__a--night:visited:focus,
+    .rocket a--night:visited:hover,
+    .rocket a--night:visited:focus,
+    .rocket__a--night:visited:hover,
+    .rocket__a--night:visited:focus {
+      color: white; }
+      .rocket .rocket a--night:visited:hover:active, .rocket .rocket a--night:visited:focus:active, .rocket .rocket__a--night:visited:hover:active, .rocket .rocket__a--night:visited:focus:active,
+      .rocket a--night:visited:hover:active,
+      .rocket a--night:visited:focus:active,
+      .rocket__a--night:visited:hover:active,
+      .rocket__a--night:visited:focus:active {
+        color: white; }
 
 .rocket .rocket__pill,
 .rocket__pill {
@@ -1097,6 +1140,76 @@
     .rocket__button--primary:hover path,
     .rocket__button--primary:focus path {
       stroke: #20211f; }
+    .rocket .rocket__button--primary.rocket__button--night,
+    .rocket__button--primary.rocket__button--night {
+      background-color: white;
+      color: #20211f;
+      border-color: white; }
+      .rocket .rocket__button--primary.rocket__button--night:disabled,
+      .rocket__button--primary.rocket__button--night:disabled {
+        color: rgba(255, 255, 255, 0.6);
+        background-color: rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 255, 255, 0); }
+        .rocket .rocket__button--primary.rocket__button--night:disabled:hover, .rocket .rocket__button--primary.rocket__button--night:disabled:focus,
+        .rocket__button--primary.rocket__button--night:disabled:hover,
+        .rocket__button--primary.rocket__button--night:disabled:focus {
+          color: rgba(255, 255, 255, 0.6); }
+      .rocket .rocket__button--primary.rocket__button--night:hover:after, .rocket .rocket__button--primary.rocket__button--night:focus:after,
+      .rocket__button--primary.rocket__button--night:hover:after,
+      .rocket__button--primary.rocket__button--night:focus:after {
+        border-color: white; }
+      .rocket .rocket__button--primary.rocket__button--night:active,
+      .rocket__button--primary.rocket__button--night:active {
+        background-color: rgba(255, 255, 255, 0.8);
+        border-color: rgba(255, 255, 255, 0); }
+      .rocket .rocket__button--primary.rocket__button--night g,
+      .rocket__button--primary.rocket__button--night g {
+        opacity: 1; }
+      .rocket .rocket__button--primary.rocket__button--night polygon,
+      .rocket__button--primary.rocket__button--night polygon {
+        opacity: 1;
+        stroke: #20211f; }
+      .rocket .rocket__button--primary.rocket__button--night line,
+      .rocket__button--primary.rocket__button--night line {
+        stroke: #20211f; }
+      .rocket .rocket__button--primary.rocket__button--night path,
+      .rocket__button--primary.rocket__button--night path {
+        stroke: #20211f; }
+  .rocket .rocket__button--secondary.rocket__button--night,
+  .rocket__button--secondary.rocket__button--night {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border-color: white; }
+    .rocket .rocket__button--secondary.rocket__button--night:disabled,
+    .rocket__button--secondary.rocket__button--night:disabled {
+      color: rgba(255, 255, 255, 0.5);
+      background-color: rgba(255, 255, 255, 0);
+      border-color: rgba(255, 255, 255, 0.5); }
+      .rocket .rocket__button--secondary.rocket__button--night:disabled:hover, .rocket .rocket__button--secondary.rocket__button--night:disabled:focus,
+      .rocket__button--secondary.rocket__button--night:disabled:hover,
+      .rocket__button--secondary.rocket__button--night:disabled:focus {
+        color: rgba(255, 255, 255, 0.5); }
+    .rocket .rocket__button--secondary.rocket__button--night:hover:after, .rocket .rocket__button--secondary.rocket__button--night:focus:after,
+    .rocket__button--secondary.rocket__button--night:hover:after,
+    .rocket__button--secondary.rocket__button--night:focus:after {
+      border-color: white; }
+    .rocket .rocket__button--secondary.rocket__button--night:active,
+    .rocket__button--secondary.rocket__button--night:active {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-color: rgba(255, 255, 255, 0); }
+    .rocket .rocket__button--secondary.rocket__button--night g,
+    .rocket__button--secondary.rocket__button--night g {
+      opacity: 1; }
+    .rocket .rocket__button--secondary.rocket__button--night polygon,
+    .rocket__button--secondary.rocket__button--night polygon {
+      opacity: 1;
+      stroke: white; }
+    .rocket .rocket__button--secondary.rocket__button--night line,
+    .rocket__button--secondary.rocket__button--night line {
+      stroke: white; }
+    .rocket .rocket__button--secondary.rocket__button--night path,
+    .rocket__button--secondary.rocket__button--night path {
+      stroke: white; }
   .rocket .rocket__button--tertiary,
   .rocket__button--tertiary {
     border-color: transparent;
@@ -1130,63 +1243,104 @@
     .rocket__button--tertiary:hover:after,
     .rocket__button--tertiary:focus:after {
       border-color: #20211f; }
-    .rocket .rocket__button--tertiary:hover g, .rocket .rocket__button--tertiary:focus g,
-    .rocket__button--tertiary:hover g,
-    .rocket__button--tertiary:focus g {
-      opacity: 1; }
-    .rocket .rocket__button--tertiary:hover polygon, .rocket .rocket__button--tertiary:focus polygon,
-    .rocket__button--tertiary:hover polygon,
-    .rocket__button--tertiary:focus polygon {
-      opacity: 1;
-      stroke: #20211f; }
-    .rocket .rocket__button--tertiary:hover line, .rocket .rocket__button--tertiary:focus line,
-    .rocket__button--tertiary:hover line,
-    .rocket__button--tertiary:focus line {
-      stroke: #20211f; }
-    .rocket .rocket__button--tertiary:hover path, .rocket .rocket__button--tertiary:focus path,
-    .rocket__button--tertiary:hover path,
-    .rocket__button--tertiary:focus path {
-      stroke: #20211f; }
+    .rocket .rocket__button--tertiary.rocket__button--night,
+    .rocket__button--tertiary.rocket__button--night {
+      background-color: rgba(255, 255, 255, 0);
+      color: white;
+      border-color: rgba(255, 255, 255, 0);
+      /* Tertiary button does not have styles of pressed - as per Zeplin */ }
+      .rocket .rocket__button--tertiary.rocket__button--night:disabled,
+      .rocket__button--tertiary.rocket__button--night:disabled {
+        color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(255, 255, 255, 0);
+        border-color: rgba(255, 255, 255, 0); }
+        .rocket .rocket__button--tertiary.rocket__button--night:disabled:hover, .rocket .rocket__button--tertiary.rocket__button--night:disabled:focus,
+        .rocket__button--tertiary.rocket__button--night:disabled:hover,
+        .rocket__button--tertiary.rocket__button--night:disabled:focus {
+          color: rgba(255, 255, 255, 0.5); }
+      .rocket .rocket__button--tertiary.rocket__button--night:hover:after, .rocket .rocket__button--tertiary.rocket__button--night:focus:after,
+      .rocket__button--tertiary.rocket__button--night:hover:after,
+      .rocket__button--tertiary.rocket__button--night:focus:after {
+        border-color: white; }
+      .rocket .rocket__button--tertiary.rocket__button--night:active:after,
+      .rocket__button--tertiary.rocket__button--night:active:after {
+        border-color: rgba(255, 255, 255, 0); }
+      .rocket .rocket__button--tertiary.rocket__button--night g,
+      .rocket__button--tertiary.rocket__button--night g {
+        opacity: 1; }
+      .rocket .rocket__button--tertiary.rocket__button--night polygon,
+      .rocket__button--tertiary.rocket__button--night polygon {
+        opacity: 1;
+        stroke: white; }
+      .rocket .rocket__button--tertiary.rocket__button--night line,
+      .rocket__button--tertiary.rocket__button--night line {
+        stroke: white; }
+      .rocket .rocket__button--tertiary.rocket__button--night path,
+      .rocket__button--tertiary.rocket__button--night path {
+        stroke: white; }
 
-.rocket .rocket ul, .rocket .rocket__ul,
-.rocket ul,
-.rocket__ul {
-  padding: 0; }
-  .rocket .rocket ul > li,
-  .rocket .rocket ul .rocket__li, .rocket .rocket__ul > li,
-  .rocket .rocket__ul .rocket__li,
-  .rocket ul > li,
-  .rocket ul .rocket__li,
-  .rocket__ul > li,
-  .rocket__ul .rocket__li {
-    font-family: "Source Sans", sans-serif;
-    font-size: 16px;
-    line-height: 22px;
-    padding: 0 0 0 24px;
-    color: #3f4140;
-    list-style: none;
-    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' aria-hidden='true' focusable='false'%3E%3Cpolyline points='5.99 3.99 10.02 8 5.99 12.01' fill='none' stroke='%2320211f' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' opacity='0.65'/%3E%3C/svg%3E%0A");
-    background-position: left center;
-    background-repeat: no-repeat; }
-
-.rocket .rocket ol, .rocket .rocket__ol,
-.rocket ol,
-.rocket__ol {
-  padding: 0; }
-  .rocket .rocket ol > li,
-  .rocket .rocket ol .rocket__li, .rocket .rocket__ol > li,
-  .rocket .rocket__ol .rocket__li,
-  .rocket ol > li,
-  .rocket ol .rocket__li,
-  .rocket__ol > li,
-  .rocket__ol .rocket__li {
-    /* IE11 */
-    margin-left: 20px;
-    font-family: "Source Sans", sans-serif;
-    font-size: 16px;
-    line-height: 22px;
-    padding: 0 0 0 4px;
-    color: #3f4140; }
+.rocket .rocket,
+.rocket {
+  /**
+     * Naming compliant with role="list", role="listitem"
+     * Normall use a container a list of items but not having list style like rocket_ul/rocket_li
+     */ }
+  .rocket .rocket ul, .rocket .rocket__ul,
+  .rocket ul,
+  .rocket__ul {
+    padding: 0;
+    /* Avoid nested li to be affect by following setting */ }
+    .rocket .rocket ul > li,
+    .rocket .rocket ul .rocket__li, .rocket .rocket__ul > li,
+    .rocket .rocket__ul .rocket__li,
+    .rocket ul > li,
+    .rocket ul .rocket__li,
+    .rocket__ul > li,
+    .rocket__ul .rocket__li {
+      font-family: "Source Sans", sans-serif;
+      font-size: 16px;
+      line-height: 22px;
+      padding: 0 0 0 24px;
+      color: #3f4140;
+      list-style: none;
+      background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' aria-hidden='true' focusable='false'%3E%3Cpolyline points='5.99 3.99 10.02 8 5.99 12.01' fill='none' stroke='%2320211f' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' opacity='0.65'/%3E%3C/svg%3E%0A");
+      background-position: left center;
+      background-repeat: no-repeat; }
+  .rocket .rocket ol, .rocket .rocket__ol,
+  .rocket ol,
+  .rocket__ol {
+    padding: 0; }
+    .rocket .rocket ol > li,
+    .rocket .rocket ol .rocket__li, .rocket .rocket__ol > li,
+    .rocket .rocket__ol .rocket__li,
+    .rocket ol > li,
+    .rocket ol .rocket__li,
+    .rocket__ol > li,
+    .rocket__ol .rocket__li {
+      /* IE11 */
+      margin-left: 20px;
+      font-family: "Source Sans", sans-serif;
+      font-size: 16px;
+      line-height: 22px;
+      padding: 0 0 0 4px;
+      color: #3f4140; }
+  .rocket .rocket__list,
+  .rocket__list {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+    .rocket .rocket__list--inline .rocket__listitem,
+    .rocket__list--inline .rocket__listitem {
+      display: inline-block; }
+  .rocket .rocket__listitem,
+  .rocket__listitem {
+    display: block;
+    padding: 0;
+    margin: 0;
+    background-image: none; }
+    .rocket .rocket__listitem:before,
+    .rocket__listitem:before {
+      content: none; }
 
 .rocket .rocket__breadcrumb__list,
 .rocket__breadcrumb__list {
@@ -1194,21 +1348,23 @@
   padding: 0;
   list-style: none; }
 
-.rocket .rocket__breadcrumb__item,
-.rocket__breadcrumb__item {
+.rocket .rocket__breadcrumb__listitem,
+.rocket__breadcrumb__listitem {
   font-family: "Source Sans", sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #20211f;
   display: inline-block;
   position: relative;
+  padding: 0;
   margin-right: 32px;
-  cursor: pointer; }
-  .rocket .rocket__breadcrumb__item--current,
-  .rocket__breadcrumb__item--current {
+  cursor: pointer;
+  background-image: none; }
+  .rocket .rocket__breadcrumb__listitem--current,
+  .rocket__breadcrumb__listitem--current {
     cursor: auto; }
-  .rocket .rocket__breadcrumb__item:before,
-  .rocket__breadcrumb__item:before {
+  .rocket .rocket__breadcrumb__listitem:before,
+  .rocket__breadcrumb__listitem:before {
     background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' aria-hidden='true' focusable='false'%3E%3Cpolyline points='5.99 3.99 10.02 8 5.99 12.01' fill='none' stroke='%2320211f' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' opacity='0.65'/%3E%3C/svg%3E%0A");
     background-repeat: no-repeat;
     position: absolute;
@@ -1217,8 +1373,8 @@
     height: 16px;
     top: 5px;
     left: -25px; }
-  .rocket .rocket__breadcrumb__item:first-child:before,
-  .rocket__breadcrumb__item:first-child:before {
+  .rocket .rocket__breadcrumb__listitem:first-child:before,
+  .rocket__breadcrumb__listitem:first-child:before {
     content: none; }
 
 .rocket .rocket__listgroup__title,
@@ -1539,7 +1695,8 @@
   .rocket .rocket__navbar__item,
   .rocket__navbar__item {
     display: inline-block;
-    padding: 0; }
+    padding: 0;
+    background-image: none; }
     .rocket .rocket__navbar__item--active .rocket__navbar__link:before,
     .rocket__navbar__item--active .rocket__navbar__link:before {
       background-color: #898d8e; }
@@ -2269,7 +2426,10 @@
   border: 0;
   background-color: transparent;
   font-size: 16px;
-  transition: box-shadow 0.2s; }
+  transition: box-shadow 0.2s;
+  text-decoration: none;
+  color: #20211f;
+  line-height: 38px; }
   .rocket .rocket__pagination__prev:hover, .rocket .rocket__pagination__prev:focus, .rocket .rocket__pagination__next:hover, .rocket .rocket__pagination__next:focus, .rocket .rocket__pagination__page:hover, .rocket .rocket__pagination__page:focus,
   .rocket__pagination__prev:hover,
   .rocket__pagination__prev:focus,
@@ -2290,11 +2450,35 @@
     .rocket__pagination__page:focus:active {
       background-color: #e8e8e8;
       box-shadow: none; }
+    .rocket .rocket__pagination__prev:hover:before, .rocket .rocket__pagination__prev:focus:before, .rocket .rocket__pagination__next:hover:before, .rocket .rocket__pagination__next:focus:before, .rocket .rocket__pagination__page:hover:before, .rocket .rocket__pagination__page:focus:before,
+    .rocket__pagination__prev:hover:before,
+    .rocket__pagination__prev:focus:before,
+    .rocket__pagination__next:hover:before,
+    .rocket__pagination__next:focus:before,
+    .rocket__pagination__page:hover:before,
+    .rocket__pagination__page:focus:before {
+      box-shadow: none; }
+  .rocket .rocket__pagination__prev:visited, .rocket .rocket__pagination__next:visited, .rocket .rocket__pagination__page:visited,
+  .rocket__pagination__prev:visited,
+  .rocket__pagination__next:visited,
+  .rocket__pagination__page:visited {
+    color: #20211f; }
+    .rocket .rocket__pagination__prev:visited:hover, .rocket .rocket__pagination__prev:visited:focus, .rocket .rocket__pagination__next:visited:hover, .rocket .rocket__pagination__next:visited:focus, .rocket .rocket__pagination__page:visited:hover, .rocket .rocket__pagination__page:visited:focus,
+    .rocket__pagination__prev:visited:hover,
+    .rocket__pagination__prev:visited:focus,
+    .rocket__pagination__next:visited:hover,
+    .rocket__pagination__next:visited:focus,
+    .rocket__pagination__page:visited:hover,
+    .rocket__pagination__page:visited:focus {
+      color: #20211f; }
 
 .rocket .rocket__pagination__page--active,
 .rocket__pagination__page--active {
   background-color: #fbaa19;
   color: #20211f; }
+  .rocket .rocket__pagination__page--active:visited,
+  .rocket__pagination__page--active:visited {
+    color: white; }
 
 .rocket .rocket__pagination__prev, .rocket .rocket__pagination__next,
 .rocket__pagination__prev,
@@ -2585,7 +2769,7 @@
   .rocket__dropdown .rocket__listbox {
     position: absolute;
     width: 100%;
-    z-index: 1;
+    z-index: 10;
     margin-top: 3px; }
 
 .rocket .rocket__progressbar,
@@ -2667,11 +2851,17 @@
     color: #20211f;
     background-color: white;
     box-shadow: 0 1px 5px 0 #E8E8E8;
-    display: none;
     transform: translate(0, -50%);
+    text-align: left;
     top: 8px;
     left: 26px;
+    animation: tooltip-fadein 0.2s; }
+
+@keyframes tooltip-fadein {
+  0% {
     opacity: 0; }
+  100% {
+    opacity: 100; } }
     .rocket .rocket__tooltip__content:before,
     .rocket__tooltip__content:before {
       position: absolute;
@@ -2692,11 +2882,6 @@
       bottom: 0;
       right: 0;
       border: 10px solid white; }
-  .rocket .rocket__tooltip--shown .rocket__tooltip__content,
-  .rocket__tooltip--shown .rocket__tooltip__content {
-    transition: opacity 0.2s;
-    opacity: 1;
-    display: block; }
   .rocket .rocket__tooltip--left .rocket__tooltip__content,
   .rocket__tooltip--left .rocket__tooltip__content {
     transform: translate(-100%, -50%);

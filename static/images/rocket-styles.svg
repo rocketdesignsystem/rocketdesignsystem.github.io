@@ -1,0 +1,13 @@
+<svg width="50px" height="44px" viewBox="0 0 50 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Working" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" opacity="0.65">
+        <g id="Resources" transform="translate(-525.000000, -1053.000000)" stroke="#20211F" stroke-width="2">
+            <g id="Code" transform="translate(526.000000, 1052.433594)">
+                <g id="code" transform="translate(12.000000, 0.000000)">
+                    <path d="M23.48,8.95136 L35.28432,20.75568 C35.9716,21.44296 35.9716,22.55704 35.28432,23.24432 L23.48,35.04864 L23.48,35.04864" id="Path"></path>
+                    <path d="M31.7218666,23.7603706 L-13,23.7603706" id="Shape" transform="translate(9.360933, 22.000326) rotate(-70.013956) translate(-9.360933, -22.000326) "></path>
+                </g>
+                <path d="M0,8.95136 L11.80432,20.75568 C12.4916,21.44296 12.4916,22.55704 11.80432,23.24432 L0,35.04864 L0,35.04864" id="Path-Copy" transform="translate(6.159890, 22.000000) scale(-1, 1) translate(-6.159890, -22.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
