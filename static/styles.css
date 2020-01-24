@@ -771,75 +771,78 @@
   /* Site wise **************************************************************************************/ }
   .__website .rocket {
     /* Default markups ********************************************************************************/
+    /* Only override immediate children. So less likely to affect styles in Components
+/* eg.  h4.rocket__dialog__title otherwise can be overridden by __website .rocket h4
+/* ************************************************************************************************/
     /* Rocket styles **********************************************************************************/ }
-    .__website .rocket h1 {
+    .__website .rocket > h1 {
       font-family: "ITC Avant Garde Pro", "century gothic", arial, sans-serif;
       font-size: 60px; }
       @media only screen and (max-width: 768px) {
-        .__website .rocket h1 {
+        .__website .rocket > h1 {
           font-size: 32px;
           color: #20211f; } }
-    .__website .rocket h2 {
+    .__website .rocket > h2 {
       font-family: "ITC Avant Garde Pro", "century gothic", arial, sans-serif;
       font-size: 20px;
       margin-top: 1em; }
-    .__website .rocket h3 {
+    .__website .rocket > h3 {
       font-family: "ITC Avant Garde Pro", "century gothic", arial, sans-serif;
       font-size: 16px;
       margin-top: 1em; }
-    .__website .rocket h4 {
+    .__website .rocket > h4 {
       font-family: "ITC Avant Garde Pro", "century gothic", arial, sans-serif;
       font-size: 14px;
       margin-top: 1em; }
-    .__website .rocket h5 {
+    .__website .rocket > h5 {
       font-family: "ITC Avant Garde Pro", "century gothic", arial, sans-serif;
       margin-top: 1.5em; }
-    .__website .rocket h6 {
+    .__website .rocket > h6 {
       margin-top: 2em; }
-    .__website .rocket h1 + p {
+    .__website .rocket > h1 + p {
       font-size: 16px;
       color: #20211f;
       height: 220px; }
-    .__website .rocket h2 + p {
+    .__website .rocket > h2 + p {
       font-size: 16px; }
-    .__website .rocket h2 + p,
-    .__website .rocket h2 + ul,
-    .__website .rocket h2 + ol,
-    .__website .rocket h2 + table,
-    .__website .rocket h2 + dl,
-    .__website .rocket h2 + pre,
-    .__website .rocket h2 + blockquote,
-    .__website .rocket h3 + p,
-    .__website .rocket h3 + ul,
-    .__website .rocket h3 + ol,
-    .__website .rocket h3 + table,
-    .__website .rocket h3 + dl,
-    .__website .rocket h3 + pre,
-    .__website .rocket h3 + blockquote,
-    .__website .rocket h4 + p,
-    .__website .rocket h4 + ul,
-    .__website .rocket h4 + ol,
-    .__website .rocket h4 + table,
-    .__website .rocket h4 + dl,
-    .__website .rocket h4 + pre,
-    .__website .rocket h4 + blockquote,
-    .__website .rocket h5 + p,
-    .__website .rocket h5 + ul,
-    .__website .rocket h5 + ol,
-    .__website .rocket h5 + table,
-    .__website .rocket h5 + dl,
-    .__website .rocket h5 + pre,
-    .__website .rocket h5 + blockquote {
+    .__website .rocket > h2 + p,
+    .__website .rocket > h2 + ul,
+    .__website .rocket > h2 + ol,
+    .__website .rocket > h2 + table,
+    .__website .rocket > h2 + dl,
+    .__website .rocket > h2 + pre,
+    .__website .rocket > h2 + blockquote,
+    .__website .rocket > h3 + p,
+    .__website .rocket > h3 + ul,
+    .__website .rocket > h3 + ol,
+    .__website .rocket > h3 + table,
+    .__website .rocket > h3 + dl,
+    .__website .rocket > h3 + pre,
+    .__website .rocket > h3 + blockquote,
+    .__website .rocket > h4 + p,
+    .__website .rocket > h4 + ul,
+    .__website .rocket > h4 + ol,
+    .__website .rocket > h4 + table,
+    .__website .rocket > h4 + dl,
+    .__website .rocket > h4 + pre,
+    .__website .rocket > h4 + blockquote,
+    .__website .rocket > h5 + p,
+    .__website .rocket > h5 + ul,
+    .__website .rocket > h5 + ol,
+    .__website .rocket > h5 + table,
+    .__website .rocket > h5 + dl,
+    .__website .rocket > h5 + pre,
+    .__website .rocket > h5 + blockquote {
       margin-top: -0.25em; }
-    .__website .rocket p,
-    .__website .rocket ul > li,
-    .__website .rocket ol > li {
+    .__website .rocket > p,
+    .__website .rocket > ul > li,
+    .__website .rocket > ol > li {
       color: #727272; }
-    .__website .rocket pre {
+    .__website .rocket > pre {
       background-color: #f8f8f8;
       padding: 1em;
       word-break: break-word; }
-    .__website .rocket strong {
+    .__website .rocket > strong {
       color: #20211f; }
     .__website .rocket__button--icon:hover:before, .__website .rocket__button--icon:focus:before {
       box-shadow: none; }
