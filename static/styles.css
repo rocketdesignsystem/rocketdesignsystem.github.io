@@ -1148,7 +1148,8 @@ pre[class*="language-"] {
       margin-left: 0; } }
   .__main--system .__main__content {
     max-width: 980px;
-    margin-top: 215px; }
+    margin-top: 215px;
+    word-break: break-word; }
     @media only screen and (max-width: 768px) {
       .__main--system .__main__content {
         padding-left: 20px;
